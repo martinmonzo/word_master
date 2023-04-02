@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# get local and remote branch
+local_branch=$(git rev-parse --abbrev-ref HEAD)
+remote_branch=$(git rev-parse --abbrev-ref @{u})
+
+# if you try to push to "main", then the push must be rejected
+if [[ "$remote_branch" == "origin/main" ]]; then
+   echo "You can not directly push to branch 'main'."
+   exit 1
+fi
+
+# else, allow the push
+exit 0
