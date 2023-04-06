@@ -1,11 +1,11 @@
 from django.contrib import admin
 
 from .models import (
-    Definition,
-    Encyclopedic,
+    Definicion,
+    Enciclopedica,
 )
 
 
 # Register your models here.
-admin.site.register(Definition)
-admin.site.register(Encyclopedic)
+admin.site.register(Definicion)
+admin.site.register(Enciclopedica)
