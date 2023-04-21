@@ -135,3 +135,5 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+TIMEOUT_SECONDS = 7200  # 2 horas
