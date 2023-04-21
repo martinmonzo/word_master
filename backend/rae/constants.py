@@ -1,3 +1,7 @@
+URL_RAE = 'https://dle.rae.es/'
+HTTP_HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
+
+
 ESPECIALIDADES = [
     'Acústica',
     'Aeronáutica',
@@ -128,6 +132,7 @@ REGIONES = [
     'Palencia',
     'Panamá',
     'Paraguay',
+    'Perú',
     'Puerto Rico',
     'País Vasco',
     'República Dominicana',
@@ -157,6 +162,7 @@ CATEGORIAS_GRAMATICALES_ESPECIALES = {
     'pronombre': ['masculino', 'femenino', 'neutro', 'plural'],
 }
 
-COLOQUIAL = 'coloquial'
-DESUSADO = 'desusado'
-POCO_USADO = 'poco usado'
+COLOQUIAL = 'coloq.'
+NO_USADAS = ('desus.', 'p. us.')
+
+CLASES_QUE_PERTENECEN_A_LA_DEFINICION = ['etc.', 'núm. atóm.', 'U.', 'u.', 'p. ej.,', 'P. ej.,', 'U. t.', 'cm', 'cm,']
