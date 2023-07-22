@@ -3,8 +3,7 @@ from django.db import models
 # Create your models here.
 class Definicion(models.Model):
     id = models.AutoField(primary_key=True)
-    palabra_rae = models.CharField(max_length=255)
-    palabra_acepcion = models.CharField(max_length=255)
+    palabra = models.CharField(max_length=255)
     especialidad = models.CharField(max_length=100, null=True, blank=True)
     region = models.CharField(max_length=100, null=True, blank=True) 
     recursiva = models.BooleanField()
